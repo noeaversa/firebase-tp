@@ -91,6 +91,13 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2,
+            "browserTarget": "firebase-tp-1:build:production"
+          }
         }
       }
     }

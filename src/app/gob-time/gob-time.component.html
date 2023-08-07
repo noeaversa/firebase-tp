@@ -1,0 +1,14 @@
+<table id="table">
+    <thead>
+      <tr>
+        <th id="fecha-titulo">Fecha</th>
+        <th>Cantidad de vehiculos producidos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of info.data">
+        <td>{{ item[0] }}</td>
+        <td>{{ item[1] }}</td>
+      </tr>
+    </tbody>
+  </table>

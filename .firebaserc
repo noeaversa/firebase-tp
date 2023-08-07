@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tp-1-5a214"
+  },
+  "targets": {
+    "tp-1-5a214": {
+      "hosting": {
+        "firebase-tp-1": [
+          "tp-1-5a214"
+        ]
+      }
+    }
+  }
+}

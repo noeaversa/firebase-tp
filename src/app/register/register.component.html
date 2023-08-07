@@ -1,0 +1,20 @@
+<section>
+    <h2>REGISTRO</h2>
+    <form >
+      <div *ngIf="this.userAlreadyInUse">El usuario ya existe, cambialo porfi</div>
+        <label> Name: <input type="text" [(ngModel)]="this.user.email" name="user" required>
+        </label>
+        <br>
+        <div *ngIf="this.showWrongEmail">el mail es incorrecto</div>
+        <br>
+        <br>
+        <label> Password: <input type="password" [(ngModel)]="this.user.password" name="passw" required>
+        </label>
+        <br>
+        <div *ngIf="this.showWrongPass">La contraseña debe tener al menos 6 caracteres</div>
+        <br>
+        <button   [disabled]="this.user.email == ''  ||  this.user.password ==''" (click)="Ingresar()">Submit</button>
+      </form>
+
+     
+</section>

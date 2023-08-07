@@ -1,0 +1,18 @@
+<section>
+    <h2>INGRESO</h2>
+    <form >
+      <div *ngIf="this.showWrongUser">No se encontro al usuario</div>
+        <label> Name: <input type="text" [(ngModel)]="this.user.email" name="user" required>
+        </label>
+        <br>
+        <div *ngIf="this.showWrongEmail">el mail es incorrecto</div>
+        <br>
+        <br>
+        <label> Password: <input type="password" [(ngModel)]="this.user.password" name="passw" required>
+        </label>
+        <div *ngIf="this.showWrongPass">La contraseña es incorrecta</div>
+        <br>
+        <br>
+        <button   [disabled]="this.user.email == ''  ||  this.user.password ==''" (click)="loguearse()">Submit</button>
+      </form>
+</section>
